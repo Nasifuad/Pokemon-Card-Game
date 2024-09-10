@@ -10,7 +10,12 @@ async function getPokemon(name) {
   const res = await fetch(`${poke_url + name}`);
   const data = await res.json();
   console.log(data);
-  return data.sprites.front_default;
+  console.log(data.sprites);
+  const types = data.types.map((typeInfo) => {
+    typeInfo.type.name;
+  });
+  console.log(types);
+  return data.sprites.back_default;
 }
 async function showPokemon(name) {
   const font_image = await getPokemon(name);

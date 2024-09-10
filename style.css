@@ -115,6 +115,7 @@ header {
 }
 .verses {
   display: flex;
+  justify-content: space-around;
   gap: 20px;
   align-items: center;
 }
@@ -135,7 +136,12 @@ header {
   background-color: burlywood;
   padding: 10px;
 }
-.img-box1 p {
-  color: red;
+.img-box1 div,
+.img-box2 div {
+  height: 100%;
+  /* background: #d29beb; */
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
   letter-spacing: 0.5rem;
+  text-align: center;
 }

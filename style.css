@@ -1,0 +1,141 @@
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pokemon Solid";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: goldenrod;
+}
+header {
+  background-color: mediumslateblue;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.title h1 {
+  color: yellow;
+  font-size: 70px;
+  -webkit-text-stroke: 3px rgb(0, 69, 167);
+}
+.title img {
+  width: 150px;
+}
+
+.main {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+}
+.search-box,
+.search-box1 {
+  display: flex;
+  /* height: 100px; */
+  gap: 10px;
+}
+#poke-name,
+#poke-name-one {
+  width: 300px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: yellow;
+  background-color: black;
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+.search-boxes {
+  display: flex;
+
+  gap: 30px;
+}
+.battle {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+#battle {
+  background-color: rgb(254, 0, 0);
+  border-radius: 10px;
+  border: none;
+  width: 400px;
+  padding: 0px 10px;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  box-shadow: 15px 14px 1px black;
+}
+#battle:active {
+  transform: translate(10px, 10px);
+  transform: scale(0.8, 0.8);
+  /* transition: 0.21s ease; */
+  /* box-shadow: 25px 24px 1px black; */
+}
+.knife {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 2rem;
+  z-index: 1;
+  animation: rotate 1.2s infinite linear;
+}
+.knife-one {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  font-size: 2rem;
+  z-index: 1;
+  animation: rotate 1.2s infinite reverse linear;
+}
+#Search,
+#Search-one {
+  width: 50px;
+  animation: rotate 1.2s infinite linear;
+}
+
+#Search-one {
+  animation: rotate 1.2s infinite reverse linear;
+}
+#pokemon-img,
+#pokemon-img-one {
+  /* display: none; */
+
+  border-radius: 10px;
+  text-shadow: 10px 5px 10px rgb(21, 0, 255);
+}
+.verses {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.img-box1,
+.img-box2 {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  padding: 10px;
+}
+.img-box1 p {
+  color: red;
+  letter-spacing: 0.5rem;
+}

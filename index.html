@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img src="./assests/Meow.png" alt="MEOW" />
+        <h1>Pokemon Search</h1>
+      </div>
+    </header>
+    <div class="main">
+      <div class="search-boxes">
+        <div class="search-box">
+          <img src="./assests/Pokebol.svg" alt="🔍" id="Search" width="" />
+          <input type="text" id="poke-name" placeholder="Enter Pokemon Name" />
+        </div>
+        <p style="font-size: 20px">💥💥</p>
+        <div class="search-box1">
+          <input
+            type="text"
+            id="poke-name-one"
+            placeholder="Enter Pokemon Name"
+          />
+          <img src="./assests/Pokebol.svg" alt="🔍" id="Search-one" width="" />
+        </div>
+      </div>
+      <div class="battle">
+        <p class="knife-one">🗡️</p>
+        <button id="battle">Battle</button>
+        <p class="knife">🗡️</p>
+      </div>
+      <div class="verses">
+        <div class="img-box1">
+          <img
+            src="./assests/Meow.png"
+            width="220px"
+            alt="img"
+            id="pokemon-img"
+          />
+          <div class="power-stats-one">
+            <p class="power">100</p>
+            <div class="type">Electric</div>
+            <div class="stronger">Water</div>
+            <div class="weaker">Rock</div>
+          </div>
+        </div>
+        <h1>VS</h1>
+        <div class="img-box2">
+          <img
+            src="./assests/Meow.png"
+            width="220px"
+            alt="img"
+            id="pokemon-img-one"
+          />
+          <div class="power-stats-two">
+            <p class="power">300</p>
+            <div class="type">Fire</div>
+            <div class="stronger">Grass</div>
+            <div class="weaker">Fly</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

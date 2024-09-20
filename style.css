@@ -9,19 +9,22 @@ body {
   display: flex;
   flex-direction: column;
   background: goldenrod;
+  flex-wrap: wrap;
 }
 header {
   background-color: mediumslateblue;
+  height: 30vh;
 }
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 0px;
+  padding: 0.8rem 0px;
+  flex-wrap: wrap;
 }
 .title h1 {
   color: yellow;
-  font-size: 70px;
+  font-size: 4rem;
   -webkit-text-stroke: 3px rgb(0, 69, 167);
 }
 .title img {
@@ -42,6 +45,7 @@ header {
   display: flex;
   /* height: 100px; */
   gap: 10px;
+  flex-wrap: wrap;
 }
 #poke-name,
 #poke-name-one {
@@ -50,10 +54,12 @@ header {
   border: none;
   padding: 10px;
   border-radius: 10px;
-  color: yellow;
-  background-color: black;
+  color: rgba(217, 255, 0, 0.595);
+  background-color: rgba(36, 19, 19, 0.808);
   font-size: 1rem;
   letter-spacing: 5px;
+  text-align: center;
+  text-decoration: overline;
 }
 .search-boxes {
   display: flex;

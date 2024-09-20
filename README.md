@@ -1,1 +1,1 @@
-A simple pokemon gameeeee
+A simple pokemon gamee to try out how API works and a playgroud to try my new ideas and css and js skills that I learn regulary to try out here. Hehe also I want to add many features here so that I can add this project to my portfolio haa

@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   background: goldenrod;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 header {
   background-color: mediumslateblue;
@@ -20,7 +20,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 0.8rem 0px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .title h1 {
   color: yellow;
@@ -28,7 +28,7 @@ header {
   -webkit-text-stroke: 3px rgb(0, 69, 167);
 }
 .title img {
-  width: 150px;
+  width: 9rem;
 }
 
 .main {
@@ -39,13 +39,14 @@ header {
   justify-content: center;
   padding: 30px;
   gap: 30px;
+  /* flex-wrap: wrap; */
 }
 .search-box,
 .search-box1 {
   display: flex;
   /* height: 100px; */
   gap: 10px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 #poke-name,
 #poke-name-one {
@@ -63,7 +64,7 @@ header {
 }
 .search-boxes {
   display: flex;
-
+  /* flex-wrap: wrap; */
   gap: 30px;
 }
 .battle {
@@ -121,9 +122,10 @@ header {
 }
 .verses {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 @keyframes rotate {
   0% {

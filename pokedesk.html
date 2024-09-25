@@ -54,7 +54,22 @@
           <p id="type">Cat</p>
         </div>
       </div>
+      <div class="newpage">
+        <button id="one" class="pagetrack">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <!-- <script src="pokedesk.js"></script> -->
+    <script>
+      const poke_url = "https://pokeapi.co/api/v2/pokemon/";
+
+      async function getPokemon(url) {
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data);
+      }
+      getPokemon(poke_url);
+    </script>
   </body>
 </html>

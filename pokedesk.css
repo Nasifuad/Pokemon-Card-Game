@@ -1,3 +1,111 @@
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pokemon Solid";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: goldenrod;
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+}
+header {
+  background-color: mediumslateblue;
+  width: 100%;
+  /* height: 30vh; */
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 0px;
+
+  /* flex-wrap: wrap; */
+}
+.title h1 {
+  color: rgb(250, 213, 0);
+  font-size: 4rem;
+  -webkit-text-stroke: 4px rgb(0, 69, 167);
+}
+.title img {
+  width: 10rem;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.nav a {
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  box-shadow: 5px 0px 5px black, -5px 5px 5px black;
+  opacity: 0.8;
+}
+.nav a::after {
+  margin-right: auto;
+}
+.nav a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  /* padding: 10px; */
+  display: block;
+  background: #f44336;
+  transition: 0.7s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
 .pokedesk {
   background-color: rgb(255, 213, 0);
+}
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+.container div {
+  padding: 10px 0px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.302);
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.252),
+    -5px 5px 5px rgba(0, 0, 0, 0.252);
+  border: none;
+  color: rgba(0, 0, 0, 0.71);
+  border-radius: 15px;
+}
+.container div:hover {
+  color: pink;
+  /* transition: 0.8s ease; */
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.718),
+    -5px 5px 7px rgba(0, 0, 0, 0.715);
 }

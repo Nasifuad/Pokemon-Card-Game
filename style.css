@@ -9,29 +9,34 @@ body {
   display: flex;
   flex-direction: column;
   background: goldenrod;
+  justify-content: center;
+  align-items: center;
   /* flex-wrap: wrap; */
 }
 header {
   background-color: mediumslateblue;
-  height: 30vh;
+  width: 100%;
+  /* height: 30vh; */
 }
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.8rem 0px;
+
   /* flex-wrap: wrap; */
 }
 .title h1 {
-  color: yellow;
+  color: rgb(250, 213, 0);
   font-size: 4rem;
-  -webkit-text-stroke: 3px rgb(0, 69, 167);
+  -webkit-text-stroke: 4px rgb(0, 69, 167);
 }
 .title img {
-  width: 9rem;
+  width: 10rem;
 }
 
 .main {
+  width: 100%;
   /* height: 100vh; */
   display: flex;
   flex-direction: column;
@@ -40,7 +45,17 @@ header {
   padding: 30px;
   gap: 30px;
   /* flex-wrap: wrap; */
+  background-color: cadetblue;
 }
+.search-boxes {
+  display: flex;
+  /* background-color: blue; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
 .search-box,
 .search-box1 {
   display: flex;
@@ -50,7 +65,8 @@ header {
 }
 #poke-name,
 #poke-name-one {
-  width: 300px;
+  width: 20rem;
+  min-width: 10rem;
   outline: none;
   border: none;
   padding: 10px;
@@ -61,11 +77,6 @@ header {
   letter-spacing: 5px;
   text-align: center;
   /* text-decoration: overline; */
-}
-.search-boxes {
-  display: flex;
-  /* flex-wrap: wrap; */
-  gap: 30px;
 }
 .battle {
   display: flex;

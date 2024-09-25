@@ -42,10 +42,16 @@ header {
   padding: 1rem;
 }
 .nav a {
+  border-radius: 10px;
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
   letter-spacing: 5px;
+  padding: 10px;
   text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  box-shadow: 5px 0px 5px black, -5px 5px 5px black;
+  opacity: 0.8;
 }
 .nav a::after {
   margin-right: auto;

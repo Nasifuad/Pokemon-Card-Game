@@ -15,7 +15,7 @@ async function getPokemon(name) {
     typeInfo.type.name;
   });
   console.log(types);
-  return data.sprites.back_default;
+  return data.sprites.front_shiny;
 }
 async function showPokemon(name) {
   const font_image = await getPokemon(name);

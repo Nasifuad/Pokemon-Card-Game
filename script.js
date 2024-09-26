@@ -15,50 +15,61 @@ async function getPokemon(url) {
 async function showPokemon(name) {
   const url = poke_url + name;
   const data = await getPokemon(url);
+  const src = data.sprites.front_default;
+  const atk = data.base_experience;
+  const hp = data.stats[0].base_stat;
+  const type = data.types[0].type.name;
+  const ability = data.abilities[0].ability.name;
+  console.log(src);
   console.log(data);
   const PokemonCard = document.createElement("div");
-  PokemonCard.innerHTML = `
+  box1.innerHTML = `
    <div class="img-box2">
             <img
-              src=""
+              src="${src}"
               width="220px"
               alt="img"
               id="pokemon-img"
             />
+            <p> ${name} </p>
             <div class="power-stats-one">
-              <div class="power">Atk: 78/100</div>
-              <div class="def">Atk: 32/100</div>
-              <div class="type">Type:Fire</div>
-              <div class="stronger">Strong: Grass</div>
-              <div class="weaker">Weak : Rock</div>
+              <div class="power">Atk: ${atk}</div>
+              <div class="def">Def: ${hp}</div>
+              <div class="type">Type: ${type}</div>
+              <div class="atk">Ability : ${ability}</div>
             </div>
           </div>
   `;
-  verses.appendChild(PokemonCard);
+  // box1.appendChild(PokemonCard);
 }
 async function showPokemon_one(name) {
   const url = poke_url + name;
   const data = await getPokemon(url);
+  const src = data.sprites.front_default;
+  const atk = data.base_experience;
+  const hp = data.stats[0].base_stat;
+  const type = data.types[0].type.name;
+  const ability = data.abilities[0].ability.name;
+  console.log(src);
   console.log(data);
-  const PokemonCard = document.createElement("div");
-  PokemonCard.innerHTML = `
+  box2.innerHTML = `
    <div class="img-box2">
             <img
-              src=""
+              src="${src}"
               width="220px"
               alt="img"
               id="pokemon-img"
             />
+            <p> ${name} </p>
             <div class="power-stats-one">
-              <div class="power">Atk: 78/100</div>
-              <div class="def">Atk: 32/100</div>
-              <div class="type">Type:Fire</div>
-              <div class="stronger">Strong: Grass</div>
-              <div class="weaker">Weak : Rock</div>
+              <div class="power">Atk: ${atk}</div>
+              <div class="def">Def: ${hp}</div>
+              <div class="type">Type: ${type}</div>
+              <div class="atk">Ability : ${ability}</div>
             </div>
           </div>
   `;
-  verses.appendChild(PokemonCard);
+  // box2.appendChild(PokemonCard);
 }
 
 battle.addEventListener("click", () => {

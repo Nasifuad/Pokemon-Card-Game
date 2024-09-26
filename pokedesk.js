@@ -8,11 +8,9 @@ async function getPokemon(url) {
   // console.log(data);
   return data;
 }
-for (let i = 1; i <= 3000; i++) {
+for (let i = 0; i < 3000; i++) {
   async function showPokemon(url) {
-    // let name = "pikachu";
-    let id = i;
-    url = url + id;
+    url = url + i;
     const data = await getPokemon(url);
     console.log(data);
     const type = data.types[0].type.name;

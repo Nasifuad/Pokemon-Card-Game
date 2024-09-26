@@ -31,7 +31,7 @@ async function showPokemon(name) {
               alt="img"
               id="pokemon-img"
             />
-            <p> ${name} </p>
+            <p class="name"> ${name} </p>
             <div class="power-stats-one">
               <div class="power">Atk: ${atk}</div>
               <div class="def">Def: ${hp}</div>
@@ -60,7 +60,7 @@ async function showPokemon_one(name) {
               alt="img"
               id="pokemon-img"
             />
-            <p> ${name} </p>
+            <p class="name"> ${name} </p>
             <div class="power-stats-one">
               <div class="power">Atk: ${atk}</div>
               <div class="def">Def: ${hp}</div>

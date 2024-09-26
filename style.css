@@ -191,14 +191,21 @@ header {
 }
 .img-box1 div,
 .img-box2 div {
-  height: 100%;
+  /* height: 100%; */
   /* background: #d29beb; */
-  font-size: 0.8rem;
-  color: rgb(0, 0, 0);
-  letter-spacing: 0.5rem;
+  /* font-size: 0.8rem; */
+  color: rgb(53, 0, 178);
+  letter-spacing: 0.2rem;
+  font-weight: 600;
   text-align: center;
 }
-
+.name {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  font-weight: 800;
+}
 @media (max-width: 1024px) {
   .img-box1,
   .img-box2 {

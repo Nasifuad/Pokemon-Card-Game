@@ -1,35 +1,41 @@
 @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
 :root {
-  --fire: rgb(255, 25, 0);
+  --fire: rgba(255, 25, 0, 0.552);
   --grass: rgba(35, 130, 11, 0.749);
-  --water: rgb(0, 238, 255);
-  --bug: rgb(31, 1, 71);
-  --electric: rgb(255, 230, 0);
-  --ice: rgb(173, 216, 230);
-  --psychic: rgb(255, 20, 147);
-  --rock: rgb(184, 134, 11);
+  --water: rgba(0, 162, 255, 0.608);
+  --bug: rgba(31, 1, 71, 0.645);
+  --electric: rgba(169, 152, 0, 0.583);
+  --ice: rgba(173, 216, 230, 0.563);
+  --psychic: rgba(255, 20, 145, 0.599);
+  --rock: rgba(53, 52, 51, 0.664);
   --ground: rgb(222, 184, 135);
-  --flying: rgb(135, 206, 235);
+  --flying: rgba(15, 187, 255, 0.612);
   /* --bug: rgb(107, 142, 35); */
   --poison: rgb(160, 32, 240);
-  --dragon: rgb(0, 0, 139);
-  --ghost: rgb(72, 61, 139);
-  --dark: rgb(47, 79, 79);
-  --steel: rgb(169, 169, 169);
-  --fairy: rgb(255, 182, 193);
-  --fighting: rgb(139, 69, 19);
-  --normal: rgb(192, 192, 192);
+  --dragon: rgba(0, 0, 139, 0.556);
+  --ghost: rgba(71, 61, 139, 0.615);
+  --dark: rgba(47, 79, 79, 0.697);
+  --steel: rgba(169, 169, 169, 0.74);
+  --fairy: rgba(255, 182, 208, 0.708);
+  --fighting: rgba(139, 69, 19, 0.55);
+  --normal: rgba(192, 192, 192, 0.598);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Pokemon Solid";
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
   display: flex;
   flex-direction: column;
-  background: rgba(194, 60, 45, 0.709);
+  background: rgb(243, 35, 3);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 15, 181, 0.661) 0%,
+    rgba(72, 34, 1, 0.812) 35%,
+    rgba(113, 0, 114, 0.862) 100%
+  );
   justify-content: center;
   /* align-items: center; */
   /* flex-wrap: wrap; */
@@ -39,6 +45,9 @@ header {
   width: 100%;
   /* height: 30vh; */
 }
+.pokedesk {
+  background-color: rgba(127, 136, 255, 0.692);
+}
 .title {
   display: flex;
   align-items: center;
@@ -47,14 +56,7 @@ header {
 
   /* flex-wrap: wrap; */
 }
-.title h1 {
-  color: rgb(250, 213, 0);
-  font-size: 4rem;
-  -webkit-text-stroke: 4px rgb(0, 69, 167);
-}
-.title img {
-  width: 10rem;
-}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -115,15 +117,23 @@ header {
   align-items: center;
   background-color: rgba(0, 240, 240, 0.302);
   font-size: 1.2rem;
-  letter-spacing: 5px;
+  width: 20rem;
+  min-width: 10rem;
+  max-width: 20rem;
+  /* letter-spacing: 5px; */
   /* box-shadow: 2px 2px 5px rgba(0, 3, 1, 0.252); */
   /* border: 1px solid black; */
-  color: rgba(0, 0, 0, 0.71);
+  color: rgb(0, 0, 0) !important;
   border-radius: 15px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.pokemonbox img {
+  width: 100%;
 }
 .fire {
   background-color: var(--fire);
-  color: rgb(255, 255, 255);
+  color: rgba(11, 0, 0, 0.575);
 }
 .grass {
   background-color: var(--grass);

@@ -31,7 +31,7 @@ for (let i = 1; i <= 40; i++) {
     const pokemon_card = document.createElement("div");
     pokemon_card.innerHTML = `
     <div class="pokemonbox ${type}">
-          <img src="${img_link}" alt="${name}" width="100px" />
+          <img src="${img_link}" alt="${name}"  />
           <p id="name" >${name}</p>
           <p id="type">${type}</p>
           <p id="power">${base_power}</p>

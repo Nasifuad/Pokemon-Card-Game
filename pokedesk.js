@@ -1,6 +1,6 @@
 const poke_url = "https://pokeapi.co/api/v2/pokemon/";
 const poke_url2 = 'https://pokeapi.co/api/v2/pokemon/?offset=20&limit=100"';
-
+const container = document.getElementById("container");
 async function getPokemon(url) {
   const response = await fetch(url);
   const data = await response.json();
@@ -8,7 +8,7 @@ async function getPokemon(url) {
   // console.log(data);
   return data;
 }
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 3000; i++) {
   async function showPokemon(url) {
     // let name = "pikachu";
     let id = i;
@@ -27,6 +27,18 @@ for (let i = 1; i <= 20; i++) {
     console.log(ability_arr);
     console.log(name);
     console.log(data.types[0].type.name);
+
+    const pokemon_card = document.createElement("div");
+    pokemon_card.innerHTML = `
+    <div class="pokemonbox">
+          <img src="${img_link}" alt="${name}" width="100px" />
+          <p id="name">${name}</p>
+          <p id="type">${type}</p>
+          <p id="power">${base_power}</p>
+          <p id="abilities">${ability_arr.join(",")}</p>
+        </div>
+    `;
+    container.appendChild(pokemon_card);
   }
   showPokemon(poke_url);
 }

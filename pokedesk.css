@@ -1,4 +1,25 @@
 @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+:root {
+  --fire: rgb(255, 25, 0);
+  --grass: rgba(35, 130, 11, 0.749);
+  --water: rgb(0, 238, 255);
+  --bug: rgb(31, 1, 71);
+  --electric: rgb(255, 230, 0);
+  --ice: rgb(173, 216, 230);
+  --psychic: rgb(255, 20, 147);
+  --rock: rgb(184, 134, 11);
+  --ground: rgb(222, 184, 135);
+  --flying: rgb(135, 206, 235);
+  /* --bug: rgb(107, 142, 35); */
+  --poison: rgb(160, 32, 240);
+  --dragon: rgb(0, 0, 139);
+  --ghost: rgb(72, 61, 139);
+  --dark: rgb(47, 79, 79);
+  --steel: rgb(169, 169, 169);
+  --fairy: rgb(255, 182, 193);
+  --fighting: rgb(139, 69, 19);
+  --normal: rgb(192, 192, 192);
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +29,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background: goldenrod;
+  background: rgba(194, 60, 45, 0.709);
   justify-content: center;
   /* align-items: center; */
   /* flex-wrap: wrap; */
@@ -43,14 +64,14 @@ header {
 }
 .nav a {
   border-radius: 10px;
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
   font-size: 1.2rem;
   letter-spacing: 5px;
   padding: 10px;
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;
   font-weight: 800;
-  box-shadow: 5px 0px 5px black, -5px 5px 5px black;
+  /* box-shadow: 5px 0px 5px black, -5px 5px 5px black; */
   opacity: 0.8;
 }
 .nav a::after {
@@ -69,9 +90,7 @@ header {
 .nav a:hover::after {
   width: 100%;
 }
-.pokedesk {
-  background-color: rgb(255, 213, 0);
-}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -82,34 +101,48 @@ header {
 .container {
   width: 80%;
   display: flex;
-
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
   padding: 10px;
 }
-.container div {
-  padding: 10px 0px;
-  width: 250px;
+.pokemonbox {
+  padding: 4px 5px;
+  width: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.302);
+  background-color: rgba(0, 240, 240, 0.302);
   font-size: 1.2rem;
   letter-spacing: 5px;
-  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.252),
-    -5px 5px 5px rgba(0, 0, 0, 0.252);
-  border: none;
+  /* box-shadow: 2px 2px 5px rgba(0, 3, 1, 0.252); */
+  /* border: 1px solid black; */
   color: rgba(0, 0, 0, 0.71);
   border-radius: 15px;
 }
+.fire {
+  background-color: var(--fire);
+  color: rgb(255, 255, 255);
+}
+.grass {
+  background-color: var(--grass);
+  color: rgb(255, 255, 255);
+}
+.water {
+  background-color: var(--water);
+  color: rgb(255, 255, 255);
+}
+.bug {
+  background-color: var(--bug);
+  color: white;
+}
 .container div:hover {
-  color: pink;
+  color: rgba(255, 255, 255, 0.654);
   /* transition: 0.8s ease; */
-  color: rgb(0, 0, 0);
-  box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.718),
-    -5px 5px 7px rgba(0, 0, 0, 0.715);
+  /* color: rgba(0, 0, 0, 0.527); */
+  /* box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.718),
+    -5px 5px 7px rgba(0, 0, 0, 0.715); */
 }
 .newpage {
   display: flex;

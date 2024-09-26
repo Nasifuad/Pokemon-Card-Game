@@ -8,7 +8,7 @@ async function getPokemon(url) {
   // console.log(data);
   return data;
 }
-for (let i = 1; i <= 3000; i++) {
+for (let i = 1; i <= 40; i++) {
   async function showPokemon(url) {
     // let name = "pikachu";
     let id = i;
@@ -30,9 +30,9 @@ for (let i = 1; i <= 3000; i++) {
 
     const pokemon_card = document.createElement("div");
     pokemon_card.innerHTML = `
-    <div class="pokemonbox">
+    <div class="pokemonbox ${type}">
           <img src="${img_link}" alt="${name}" width="100px" />
-          <p id="name">${name}</p>
+          <p id="name" >${name}</p>
           <p id="type">${type}</p>
           <p id="power">${base_power}</p>
           <p id="abilities">${ability_arr.join(",")}</p>

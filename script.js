@@ -1,4 +1,4 @@
-const poke_url = "https://pokeapi.co/api/v2/";
+const poke_url = "https://pokeapi.co/api/v2/pokemon/";
 const poke_name = document.getElementById("poke-name");
 const poke_name_one = document.getElementById("poke-name-one");
 const pokemon_img = document.getElementById("pokemon-img");

@@ -92,7 +92,14 @@ const login = document.getElementById("login");
 const signup = document.getElementById("signup");
 const login_page = document.getElementById("main-login");
 const signup_page = document.getElementById("main-signup");
-const mainn = document.getElementById();
+const mainn = document.getElementById("main");
 login.addEventListener("click", () => {
   login_page.style.display = "block";
+  mainn.style.display = "none";
+  signup_page.style.display = "none";
+});
+signup.addEventListener("click", () => {
+  login_page.style.display = "none";
+  mainn.style.display = "none";
+  signup_page.style.display = "block";
 });

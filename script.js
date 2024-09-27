@@ -6,11 +6,16 @@ const pokemon_img_one = document.getElementById("pokemon-img-one");
 const box1 = document.getElementById("img-box1");
 const box2 = document.getElementById("img-box2");
 const battle = document.getElementById("battle");
+const battle1 = document.getElementById("battle1");
 
 async function getPokemon(url) {
-  const res = await fetch(url);
-  const data = await res.json();
-  return data;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 }
 async function showPokemon(name) {
   const url = poke_url + name;
@@ -72,7 +77,22 @@ async function showPokemon_one(name) {
   // box2.appendChild(PokemonCard);
 }
 
+battle1.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("form submitted");
+  showPokemon(poke_name.value.toLowerCase());
+  showPokemon_one(poke_name_one.value.toLowerCase());
+});
 battle.addEventListener("click", () => {
   showPokemon(poke_name.value.toLowerCase());
   showPokemon_one(poke_name_one.value.toLowerCase());
+});
+
+const login = document.getElementById("login");
+const signup = document.getElementById("signup");
+const login_page = document.getElementById("main-login");
+const signup_page = document.getElementById("main-signup");
+const mainn = document.getElementById();
+login.addEventListener("click", () => {
+  login_page.style.display = "block";
 });

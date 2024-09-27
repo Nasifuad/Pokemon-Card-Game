@@ -223,3 +223,10 @@ header {
     flex-direction: column;
   }
 }
+
+#main-login {
+  display: none;
+}
+#main-signup {
+  display: none;
+}

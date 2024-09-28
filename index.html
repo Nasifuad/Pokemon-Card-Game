@@ -27,9 +27,18 @@
           <form action="#">
             <input type="text" id="username-signup" placeholder="Enter your UserName">
             <label for="username-signup" id="username-signup-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Username cant be empty</label>
-            <input type="password" id="signup-pass" placeholder="Enter your Password">
+            <div class="pass">
+              <input type="password" id="signup-pass" placeholder="Enter your Password">
+              <p class="notsee" id="notsee">🙈</p>
+              <p class="see" id="see" style="display: none;">🐵</p>
+            </div>
             <label for="signup-pass" id="signup-pass-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Minimum length of pass is 8</label>
-            <input type="text" id="re-signup-pass" placeholder="Re-enter Password">
+            <div class="pass">
+              <input type="password" id="re-signup-pass" placeholder="Re-enter Password">
+              <p class="notsee" id="notsee1">🙈</p>
+              <p class="see" id="see1" style="display: none;">🐵</p>
+            </div>
+           
             <label for="re-signup-pass" id="re-signup-pass-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Pass didnot match</label>
             <Button id="submit-btn">Sign Up</Button>
             <p id="success" style="font-family:'Courier New', Courier, monospace; color: rgba(0, 255, 229, 0.971);font-size: 1.4rem; font-weight: 800; display: none;" >Succuessfully Signed Up</p>
@@ -42,7 +51,12 @@
             
             <input type="text" id="username-login" placeholder="Enter your UserName">
             <label for="username-login" id="username-login-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Username cant be empty</label>
-            <input type="password" id="pass-login" placeholder="Enter your Password">
+            <div class="pass">
+              <input type="password" id="pass-login" placeholder="Enter your Password">
+              <p class="notsee" id="notsee11">🙈</p>
+              <p class="see" id="see11" style="display: none;">🐵</p>
+            </div>
+            
             <label for="pass-login" id="pass-login-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Pass cant be empty</label>
             <Button id="submit-btn-login">Login</Button>
           </form>

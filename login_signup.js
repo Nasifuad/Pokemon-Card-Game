@@ -14,22 +14,28 @@ const success = document.getElementById("success");
 //Here is the part where the username and password check happens if condition doesnot match error pops
 
 btn_signup.addEventListener("click", () => {
+  // Username validation
   if (user_name_signup.value == "") {
     user_name_signup_err.style.display = "block";
   } else {
     user_name_signup_err.style.display = "none";
   }
+
+  // Password validation
   if (pass_signup.value == "") {
     pass_signup_err.style.display = "block";
   } else {
     pass_signup_err.style.display = "none";
   }
+
+  // Re-enter password validation
   if (re_pass_signup.value == pass_signup.value) {
     re_pass_signup_err.style.display = "none";
   } else {
     re_pass_signup_err.style.display = "block";
   }
 
+  // If all validations pass
   if (
     user_name_signup.value != "" &&
     pass_signup.value != "" &&
@@ -39,9 +45,14 @@ btn_signup.addEventListener("click", () => {
     user_name_signup.value = "";
     pass_signup.value = "";
     re_pass_signup.value = "";
-    reload();
+
+    // Use a timeout to give the user time to see the success message before reloading the page
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000); // Delay of 2 seconds before reloading
   }
 });
+
 btn_login.addEventListener("click", () => {
   if (user_name_login.value == "") {
     user_name_login_err.style.display = "block";

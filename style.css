@@ -8,7 +8,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background: goldenrod;
+  /* background: goldenrod; */
   justify-content: center;
   align-items: center;
   /* flex-wrap: wrap; */
@@ -71,7 +71,7 @@ header {
 }
 .main {
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,10 +223,47 @@ header {
     flex-direction: column;
   }
 }
-
+#main-signup,
 #main-login {
   display: none;
 }
-#main-signup {
-  display: none;
+#signup:visited,
+#login:visited {
+  color: white;
+}
+.signup-box form,
+.login-box form {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(6, 3, 31, 0.567);
+  /* width: 100%; */
+}
+#submit-btn,
+#submit-btn-login {
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.379);
+  background: #00000052;
+}
+.signup-box form input,
+.login-box form input {
+  outline: none;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.373);
+  background-color: rgba(0, 0, 0, 0.073);
 }

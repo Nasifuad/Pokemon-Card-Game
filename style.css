@@ -40,6 +40,7 @@ header {
   align-items: center;
   gap: 2rem;
   padding: 1rem;
+  flex-wrap: wrap;
 }
 .nav a {
   border-radius: 10px;

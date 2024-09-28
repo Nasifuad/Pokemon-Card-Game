@@ -26,18 +26,24 @@
         <div class="signup-box search-boxes">
           <form action="#">
             <input type="text" id="username-signup" placeholder="Enter your UserName">
+            <label for="username-signup" id="username-signup-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Username cant be empty</label>
             <input type="password" id="signup-pass" placeholder="Enter your Password">
-            <input type="text" id="id" placeholder="Re-enter Password">
+            <label for="signup-pass" id="signup-pass-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Minimum length of pass is 8</label>
+            <input type="text" id="re-signup-pass" placeholder="Re-enter Password">
+            <label for="re-signup-pass" id="re-signup-pass-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Pass didnot match</label>
             <Button id="submit-btn">Sign Up</Button>
+            <p id="success" style="font-family:'Courier New', Courier, monospace; color: rgba(0, 255, 229, 0.971);font-size: 1.4rem; font-weight: 800; display: none;" >Succuessfully Signed Up</p>
           </form>
         </div>
       </div>
       <div class="main main-login" id="main-login">
         <div class="login-box search-boxes">
           <form action="#">
+            
             <input type="text" id="username-login" placeholder="Enter your UserName">
+            <label for="username-login" id="username-login-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Username cant be empty</label>
             <input type="password" id="pass-login" placeholder="Enter your Password">
-           
+            <label for="pass-login" id="pass-login-err" style="font-family: 'Courier New', Courier, monospace; color: red; display:none;">Pass cant be empty</label>
             <Button id="submit-btn-login">Login</Button>
           </form>
           
@@ -112,5 +118,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="login_signup.js"></script>
   </body>
 </html>

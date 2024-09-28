@@ -39,6 +39,7 @@ btn_signup.addEventListener("click", () => {
     user_name_signup.value = "";
     pass_signup.value = "";
     re_pass_signup.value = "";
+    reload();
   }
 });
 btn_login.addEventListener("click", () => {

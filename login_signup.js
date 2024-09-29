@@ -118,13 +118,17 @@ class UserInformation {
     this.length = 0;
     this.userName = {};
     this.userPassword = {};
+    this.container = {};
   }
 
   // Push both username and password at the same index
   CustomPushUserPass(username, password) {
     this.userName[this.length] = username;
     this.userPassword[this.length] = password;
-
+    this.container = {
+      userName: this.userName,
+      userPassword: this.userPassword,
+    };
     // Increment length after setting both username and password
     this.length++;
   }
@@ -137,3 +141,4 @@ const passval = localStorage.getItem("user.userPassword");
 console.log(userval);
 const us = JSON.parse(userval);
 console.log(us[0]);
+console.log(user);

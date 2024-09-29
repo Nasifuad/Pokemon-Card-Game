@@ -131,3 +131,9 @@ class UserInformation {
 }
 
 const user = new UserInformation();
+
+const userval = localStorage.getItem("user.userName");
+const passval = localStorage.getItem("user.userPassword");
+console.log(userval);
+const us = JSON.parse(userval);
+console.log(us[0]);

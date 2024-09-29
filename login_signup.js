@@ -47,9 +47,10 @@ btn_signup.addEventListener("click", () => {
     re_pass_signup.value = "";
 
     // Use a timeout to give the user time to see the success message before reloading the page
+
     setTimeout(() => {
       window.location.reload();
-    }, 2000); // Delay of 2 seconds before reloading
+    }, 7000); // Delay of 2 seconds before reloading
   }
 });
 

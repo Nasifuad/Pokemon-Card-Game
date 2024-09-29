@@ -277,3 +277,27 @@ header {
   top: 0;
   margin: 0px 8px;
 }
+.rotate {
+  background-color: rgba(0, 0, 0, 0.234);
+  width: 290px;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 5rem; */
+  position: absolute;
+  border-radius: 10px;
+}
+.emoji {
+  animation: rotate 1.2s infinite linear;
+  margin: 0;
+  font-size: 5rem;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

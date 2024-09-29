@@ -41,17 +41,31 @@ btn_signup.addEventListener("click", () => {
     pass_signup.value != "" &&
     re_pass_signup.value == pass_signup.value
   ) {
-    success.style.display = "block";
-    user_name_signup.value = "";
-    pass_signup.value = "";
-    re_pass_signup.value = "";
+    const username = user_name_signup.value;
+    const password = pass_signup.value; // Assuming you want to store password as well
 
-    // Use a timeout to give the user time to see the success message before reloading the page
+    // Call the method that pushes both username and password
+    user.CustomPushUserPass(username, password);
 
-    setTimeout(() => {
-      window.location.reload();
-    }, 7000); // Delay of 2 seconds before reloading
+    // Store both in localStorage if needed (this requires adjusting your data structure for localStorage)
+    localStorage.setItem("user.userName", JSON.stringify(user.userName));
+    localStorage.setItem(
+      "user.userPassword",
+      JSON.stringify(user.userPassword)
+    );
+
+    // Debug output
+    console.log(user);
+    console.log(user.userName);
+    console.log(user.userPassword);
+    // setTimeout(() => {
+    //   window.location.reload();
+    // }, 7000); // Delay of 2 seconds before reloading
   }
+  success.style.display = "block";
+  user_name_signup.value = "";
+  pass_signup.value = "";
+  re_pass_signup.value = "";
 });
 
 btn_login.addEventListener("click", () => {
@@ -96,3 +110,24 @@ document.getElementById("see11").addEventListener("click", () => {
   document.getElementById("notsee11").style.display = "block";
   pass_login.type = "password";
 });
+
+//save signup information in local storage
+
+class UserInformation {
+  constructor() {
+    this.length = 0;
+    this.userName = {};
+    this.userPassword = {};
+  }
+
+  // Push both username and password at the same index
+  CustomPushUserPass(username, password) {
+    this.userName[this.length] = username;
+    this.userPassword[this.length] = password;
+
+    // Increment length after setting both username and password
+    this.length++;
+  }
+}
+
+const user = new UserInformation();

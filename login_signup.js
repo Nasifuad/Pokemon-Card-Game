@@ -41,6 +41,7 @@ btn_signup.addEventListener("click", () => {
     pass_signup.value != "" &&
     re_pass_signup.value == pass_signup.value
   ) {
+    success.style.display = "block";
     const username = user_name_signup.value;
     const password = pass_signup.value; // Assuming you want to store password as well
 
@@ -53,16 +54,8 @@ btn_signup.addEventListener("click", () => {
       "user.userPassword",
       JSON.stringify(user.userPassword)
     );
-
-    // Debug output
-    console.log(user);
-    console.log(user.userName);
-    console.log(user.userPassword);
-    // setTimeout(() => {
-    //   window.location.reload();
-    // }, 7000); // Delay of 2 seconds before reloading
   }
-  success.style.display = "block";
+
   user_name_signup.value = "";
   pass_signup.value = "";
   re_pass_signup.value = "";

@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
 :root {
   --fire: rgba(255, 25, 0, 0.552);
-  --grass: rgba(35, 130, 11, 0.749);
+  --grass: rgba(59, 199, 24, 0.745);
   --water: rgba(0, 162, 255, 0.608);
   --bug: rgba(31, 1, 71, 0.645);
   --electric: rgba(169, 152, 0, 0.583);
@@ -110,7 +110,7 @@ header {
 }
 .pokemonbox {
   padding: 4px 5px;
-  width: max-content;
+  /* width: max-content; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,6 +127,7 @@ header {
   border-radius: 15px;
   text-transform: capitalize;
   font-weight: 600;
+  box-shadow: 0px 0px 14px rgb(0, 9, 89);
 }
 .pokemonbox img {
   width: 100%;
